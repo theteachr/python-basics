@@ -182,9 +182,36 @@ Sign  | Function
 `//`  | integer divide
 `**`  | raise to
 
+## Relational Operators
+
+Sign  | Name                  | Usage         |Function
+:----:|----------------------:|--------------:|--------
+`==`  | Equal to              |`val1 == val2` |returns True if `val1` is equal to `val2`.
+`!=`  | Not equal to          |`val1 != val2` |returns True if `val1` is not equal to `val2`.
+`>`   | Greater than          |`val1 > val2`  |returns True if `val1` is greater than `val2`.
+`<`   | Less than             |`val1 < val2`  |returns True if `val1` is less than `val2`. 
+`>=`  | Greater than equal to |`val1 >= val2` |returns True if `val1` is greater than or equal to `val2`
+`<=`  | Less than equal to    |`val1 <= val2` |returns True if `val1` is less than or equal to `val2`
+`is`  | Identity operator     |`val1 is val2` |returns True if `val1`' and `val2` point to same python object.
+`in`  | Membership operator   |`val1 in val2` |returns True if `val1` is in the sequence `val2`.
+
+## Logical Operators
+
+Sign  | Usage           |Function
+:----:|----------------:|--------
+`and` | `val1 and val2` |`val2` is only evaluated if `val1` is a true/truthy value.
+`or`  | `val1 or val2`  |`val2` is only evaluaged if `val2` is a flase/falsey value.
+`not` | `not val2`      | inverts the result of `val2`, if it is true/truthy, it makes it false/falsey and vice versa.
+
+
+## Iterable
+
+Any python object which can return it's member one at a time and hence allowing to be looped over is called an iterable. (str, list, dict, tuple, ...).
+
 ## Slicing
 
 A technique that allows access to a part of an indexable type (str, list, ...).
+Syntax : `iterable[start:end:step]`
 
 ```python
 message = 'Hello, world!'
@@ -197,4 +224,9 @@ message[-1] # '!'
 natural_numbers[:4] # [1, 2, 3, 4]
 natural_numbers[::-2] # [7, 5, 3, 1]
 ```
+
+
+
+
+
 
