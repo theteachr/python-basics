@@ -203,6 +203,16 @@ Sign  | Usage           |Function
 `or`  | `val1 or val2`  |`val2` is only evaluaged if `val2` is a flase/falsey value.
 `not` | `not val2`      | inverts the result of `val2`, if it is true/truthy, it makes it false/falsey and vice versa.
 
+## Bitwise Operators
+
+Sign  | Name                  | Usage         |Function
+:----:|-----------------------|---------------|--------
+`&`   | Bitwise AND           |`val1 & val2`  |
+`|`   | Bitwise OR            |`val1 | val2`  |returns True if `val1` is not equal to `val2`.
+`~`   | Bitwise NOT           |`~val1`        |returns True if `val1` is greater than `val2`.
+`^`   | BITWISE XOR           |`val1 ^ val2`  |returns True if `val1` is less than `val2`. 
+`>>`  | BITWISE rightshift    |`val1 >> val2` |Shifts the bits of `val1` to the right by `val2` 
+`<<`  | BITWISE leftshift     |`val1 << val2` |Shifts the bits of `val1` to the left by `val2`
 
 ## Iterable
 
