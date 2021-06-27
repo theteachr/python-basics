@@ -65,7 +65,7 @@ message = f'Welcome to {school}, {first_name} {last_name}!'
 ```
 
 Wherever a variable's value is needed inside the string,
-enclose the variable's name in flower braces.
+enclose the variable's name in flower/curly braces.
 No hassling around the plusses and spaces!
 
 > Everything inside `{}` of an f string is evaluated to its str.
@@ -162,15 +162,16 @@ def say_hi(name):
 
 say_hi('Genie') # Hi, Genie!
 ```
-
 `say_hi` is the *function*.
 `name` is its *parameter*.
 `'Genie'` is the *argument*.
 
+> To call a function, you must put `()` at the end of the function name (`func()`) and pass the require arguments (can be left empty if no arguments).
 > When a function is called, the parameters are given references to the arguments.
 > `name` will be bound to `'Genie'`.
 
 ## Arithmetic Operators
+These operators are used to perform arithmetic operations on python objects.
 
 Sign  | Function
 :----:|---------
@@ -183,6 +184,7 @@ Sign  | Function
 `**`  | raise to
 
 ## Relational Operators
+These operators are used to check relation between two operands. They always return True or False.
 
 Sign  | Name                  | Usage         |Function
 :----:|-----------------------|---------------|--------
@@ -196,23 +198,13 @@ Sign  | Name                  | Usage         |Function
 `in`  | Membership operator   |`val1 in val2` |returns True if `val1` is in the sequence `val2`.
 
 ## Logical Operators
+These operators are used to combine relational expression or boolean values.
 
 Sign  | Usage           |Function
 :----:|-----------------|--------
 `and` | `val1 and val2` |`val2` is only evaluated if `val1` is a true/truthy value.
 `or`  | `val1 or val2`  |`val2` is only evaluaged if `val2` is a flase/falsey value.
 `not` | `not val2`      | inverts the result of `val2`, if it is true/truthy, it makes it false/falsey and vice versa.
-
-## Bitwise Operators
-
-Sign  | Name                  | Usage         |Function
-:----:|-----------------------|---------------|--------
-`&`   | Bitwise AND           |`val1 & val2`  |
-`|`   | Bitwise OR            |`val1 | val2`  |returns True if `val1` is not equal to `val2`.
-`~`   | Bitwise NOT           |`~val1`        |returns True if `val1` is greater than `val2`.
-`^`   | BITWISE XOR           |`val1 ^ val2`  |returns True if `val1` is less than `val2`. 
-`>>`  | BITWISE rightshift    |`val1 >> val2` |Shifts the bits of `val1` to the right by `val2` 
-`<<`  | BITWISE leftshift     |`val1 << val2` |Shifts the bits of `val1` to the left by `val2`
 
 ## Iterable
 
