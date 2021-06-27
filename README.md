@@ -148,9 +148,9 @@ vowels.intersection(lower_case_letters) # {'u', 'i', 'o', 'a', 'e'}
 
 ## Comments
 
-Comments are a nice way to explain what your code does. These are lines of text which are ignored by the compiler and are just there for conveying the usage of certain pieces of code.
-They can be single-line or docstring.
-Single-line comments begin with `#`
+Comments are a nice way to explain what your code does. These are lines of text which are ignored by the compiler and are just there for conveying the usage of certain pieces of code.<br>
+They can be single-line or docstring.<br>
+Single-line comments begin with `#`<br>
 Docstrings begin and end with either `'''` or `"""`.
 ```python
 # This is a single line comment
@@ -246,31 +246,34 @@ Conditional statements are way to specify conditions in your code. You might wan
 conditional statements.
 
 ```python
-if (condtion):
-    do this
-elif (another condition):
-    do that
+x = 10
+y = 15
+if (x > y):
+    print("x is greater than y")
+elif (x < y):
+    print("x is smaller than y")
 else:
-    do this and that
+    print("x and y are equal")
 ```
-`if` keyword is used to specify a condition. Condition can be any statement which returns True/Truthy/False/Falsey value.
-`elif` keyword is also used to specify a condition which will be triggered if the `if` or `elif` statements above it are not triggered.
+`if` is used to specify a condition. Condition can be any statement which returns True/Truthy/False/Falsey value.
+`elif` is also used to specify a condition which will be triggered if the `if` or `elif` statements above it are not triggered.
 `else` is used if none of the specified conditions are met.
 
 ## Loops
 
 Loops are a way to repeat instruction. Python offers two types of loop. 
-1. For loop - Used for running a piece of code for specified amount of times.
+1. For loop - Used for running a piece of code for certain number of cycles/iterations.
 2. While loop - Used for running a piece of code till a condition is True.
 
 ```python
 for i in range(10):
-    print("hi")
+    print(f"hi x{i}")
 
 i = 0
 while (i != 10): # brackets are optional
-    print("hi")
+    print(f"hi x{i}")
     i += 1
-```
-`range(10)` in the above snippet is used to generate a list ( more accurately, an iterator ) of 10 elements, starting from 0, upto 10 (exclusive). `[0, 1, 2, ... 9]`
 
+```
+`range(10)` in the above snippet is used to generate a list ( more accurately, an iterator ) of 10 elements, starting from `0`, upto `10` (exclusive).<br>
+syntax: `range(start, end, step)`<br>
