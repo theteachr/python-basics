@@ -146,6 +146,19 @@ vowels.remove('y') # removes 'y' from the set
 vowels.intersection(lower_case_letters) # {'u', 'i', 'o', 'a', 'e'}
 ```
 
+## Comments
+
+Comments are a nice way to explain what your code does. These are lines of text which are ignored by the compiler and are just there for conveying the usage of certain pieces of code.
+They can be single-line or docstring.
+Single-line comments begin with `#`
+Docstrings begin and end with either `'''` or `"""`.
+```python
+# This is a single line comment
+"""
+This is a docstring.
+It can be used as a mutliline comment too!
+"""
+```
 
 ## Dynamic Typing
 
@@ -166,7 +179,7 @@ say_hi('Genie') # Hi, Genie!
 `name` is its *parameter*.
 `'Genie'` is the *argument*.
 
-> To call a function, you must put `()` at the end of the function name (`func()`) and pass the require arguments (can be left empty if no arguments).
+> To call a function, you must put `()` at the end of the function name (`func()`) and pass the required arguments (can be left empty if no arguments).
 > When a function is called, the parameters are given references to the arguments.
 > `name` will be bound to `'Genie'`.
 
@@ -184,7 +197,7 @@ Sign  | Function
 `**`  | raise to
 
 ## Relational Operators
-These operators are used to check relation between two operands. They always return True or False.
+These operators are used to check the relationship between two operands. They always return True or False.
 
 Sign  | Name                  | Usage         |Function
 :----:|-----------------------|---------------|--------
@@ -227,8 +240,37 @@ natural_numbers[:4] # [1, 2, 3, 4]
 natural_numbers[::-2] # [7, 5, 3, 1]
 ```
 
+## Conditional statements
 
+Conditional statements are way to specify conditions in your code. You might want a certain piece of code to execute only when a certain condition is met. It can be done using 
+conditional statements.
 
+```python
+if (condtion):
+    do this
+elif (another condition):
+    do that
+else:
+    do this and that
+```
+`if` keyword is used to specify a condition. Condition can be any statement which returns True/Truthy/False/Falsey value.
+`elif` keyword is also used to specify a condition which will be triggered if the `if` or `elif` statements above it are not triggered.
+`else` is used if none of the specified conditions are met.
 
+## Loops
 
+Loops are a way to repeat instruction. Python offers two types of loop. 
+1. For loop - Used for running a piece of code for specified amount of times.
+2. While loop - Used for running a piece of code till a condition is True.
+
+```python
+for i in range(10):
+    print("hi")
+
+i = 0
+while (i != 10): # brackets are optional
+    print("hi")
+    i += 1
+```
+`range(10)` in the above snippet is used to generate a list ( more accurately, an iterator ) of 10 elements, starting from 0, upto 10 (exclusive). `[0, 1, 2, ... 9]`
 
