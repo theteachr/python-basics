@@ -148,12 +148,14 @@ vowels.intersection(lower_case_letters) # {'u', 'i', 'o', 'a', 'e'}
 
 ## Comments
 
-Comments are a nice way to explain what your code does. These are lines of text which are ignored by the compiler and are just there for conveying the usage of certain pieces of code.<br>
-They can be single-line or docstring.<br>
-Single-line comments begin with `#`<br>
+Comments are a nice way to explain what your code does. These are lines of text which are ignored by the compiler and are just there for conveying the usage of certain pieces of code.\
+They can be single-line or docstring.\
+Single-line comments begin with `#`\
 Docstrings begin and end with either `'''` or `"""`.
+
 ```python
 # This is a single line comment
+
 """
 This is a docstring.
 It can be used as a mutliline comment too!
@@ -167,7 +169,7 @@ The interpreter decides for itself based on the value assigned to the variable.
 
 Also, variables can change types on the fly (dynamically).
 
-## Functions, Parameters, Arguments
+## Functions, Parameters & Arguments
 
 ```python
 def say_hi(name):
@@ -175,8 +177,8 @@ def say_hi(name):
 
 say_hi('Genie') # Hi, Genie!
 ```
-`say_hi` is the *function*.
-`name` is its *parameter*.
+`say_hi` is the *function*.\
+`name` is its *parameter*.\
 `'Genie'` is the *argument*.
 
 > To call a function, you must put `()` at the end of the function name (`func()`) and pass the required arguments (can be left empty if no arguments).
@@ -270,19 +272,15 @@ else:
 
 ## Loops
 
-Loops are a way to repeat instruction. Python offers two types of loop. 
-1. For loop - Used for running a piece of code for certain number of cycles/iterations.
-2. While loop - Used for running a piece of code till a condition is True.
+Loops are a way to repeat instructions. Python offers two types of loops. 
+1. `for` - when the number of iterations are known.
+2. `while` - when the condition for when to stop is known.
 
 ```python
 for i in range(10):
-    print(f"hi x{i}")
-
-i = 0
-while (i != 10): # brackets are optional
-    print(f"hi x{i}")
-    i += 1
-
+    ...
 ```
-`range(10)` in the above snippet is used to generate a list ( more accurately, an iterator ) of 10 elements, starting from `0`, upto `10` (exclusive).<br>
-syntax: `range(start, end, step)`<br>
+```python
+while temp.next is not None:
+    ...
+```
