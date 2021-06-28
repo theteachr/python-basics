@@ -65,7 +65,7 @@ message = f'Welcome to {school}, {first_name} {last_name}!'
 ```
 
 Wherever a variable's value is needed inside the string,
-enclose the variable's name in flower braces.
+enclose the variable's name in flower/curly braces.
 No hassling around the plusses and spaces!
 
 > Everything inside `{}` of an f string is evaluated to its str.
@@ -146,6 +146,19 @@ vowels.remove('y') # removes 'y' from the set
 vowels.intersection(lower_case_letters) # {'u', 'i', 'o', 'a', 'e'}
 ```
 
+## Comments
+
+Comments are a nice way to explain what your code does. These are lines of text which are ignored by the compiler and are just there for conveying the usage of certain pieces of code.<br>
+They can be single-line or docstring.<br>
+Single-line comments begin with `#`<br>
+Docstrings begin and end with either `'''` or `"""`.
+```python
+# This is a single line comment
+"""
+This is a docstring.
+It can be used as a mutliline comment too!
+"""
+```
 
 ## Dynamic Typing
 
@@ -162,15 +175,16 @@ def say_hi(name):
 
 say_hi('Genie') # Hi, Genie!
 ```
-
 `say_hi` is the *function*.
 `name` is its *parameter*.
 `'Genie'` is the *argument*.
 
+> To call a function, you must put `()` at the end of the function name (`func()`) and pass the required arguments (can be left empty if no arguments).
 > When a function is called, the parameters are given references to the arguments.
 > `name` will be bound to `'Genie'`.
 
 ## Arithmetic Operators
+These operators are used to perform arithmetic operations on python objects.
 
 Sign  | Function
 :----:|---------
@@ -182,9 +196,37 @@ Sign  | Function
 `//`  | integer divide
 `**`  | raise to
 
+## Relational Operators
+These operators are used to check the relationship between two operands. They always return True or False.
+
+Sign  | Name                  | Usage         |Function
+:----:|-----------------------|---------------|--------
+`==`  | Equal to              |`val1 == val2` |returns True if `val1` is equal to `val2`.
+`!=`  | Not equal to          |`val1 != val2` |returns True if `val1` is not equal to `val2`.
+`>`   | Greater than          |`val1 > val2`  |returns True if `val1` is greater than `val2`.
+`<`   | Less than             |`val1 < val2`  |returns True if `val1` is less than `val2`. 
+`>=`  | Greater than equal to |`val1 >= val2` |returns True if `val1` is greater than or equal to `val2`
+`<=`  | Less than equal to    |`val1 <= val2` |returns True if `val1` is less than or equal to `val2`
+`is`  | Identity operator     |`val1 is val2` |returns True if `val1` and `val2` point to same python object.
+`in`  | Membership operator   |`val1 in val2` |returns True if `val1` is in the sequence `val2`.
+
+## Logical Operators
+These operators are used to combine relational expression or boolean values.
+
+Sign  | Usage           |Function
+:----:|-----------------|--------
+`and` | `val1 and val2` |`val2` is only evaluated if `val1` is a true/truthy value.
+`or`  | `val1 or val2`  |`val2` is only evaluaged if `val2` is a flase/falsey value.
+`not` | `not val2`      | inverts the result of `val2`, if it is true/truthy, it makes it false/falsey and vice versa.
+
+## Iterable
+
+Any python object which can return it's member one at a time and hence allowing to be looped over is called an iterable. (str, list, dict, tuple, ...).
+
 ## Slicing
 
 A technique that allows access to a part of an indexable type (str, list, ...).
+Syntax : `iterable[start:end:step]`
 
 ```python
 message = 'Hello, world!'
@@ -198,3 +240,40 @@ natural_numbers[:4] # [1, 2, 3, 4]
 natural_numbers[::-2] # [7, 5, 3, 1]
 ```
 
+## Conditional statements
+
+Conditional statements are way to specify conditions in your code. You might want a certain piece of code to execute only when a certain condition is met. It can be done using 
+conditional statements.
+
+```python
+x = 10
+y = 15
+if (x > y):
+    print("x is greater than y")
+elif (x < y):
+    print("x is smaller than y")
+else:
+    print("x and y are equal")
+```
+`if` is used to specify a condition. Condition can be any statement which returns True/Truthy/False/Falsey value.
+`elif` is also used to specify a condition which will be triggered if the `if` or `elif` statements above it are not triggered.
+`else` is used if none of the specified conditions are met.
+
+## Loops
+
+Loops are a way to repeat instruction. Python offers two types of loop. 
+1. For loop - Used for running a piece of code for certain number of cycles/iterations.
+2. While loop - Used for running a piece of code till a condition is True.
+
+```python
+for i in range(10):
+    print(f"hi x{i}")
+
+i = 0
+while (i != 10): # brackets are optional
+    print(f"hi x{i}")
+    i += 1
+
+```
+`range(10)` in the above snippet is used to generate a list ( more accurately, an iterator ) of 10 elements, starting from `0`, upto `10` (exclusive).<br>
+syntax: `range(start, end, step)`<br>
