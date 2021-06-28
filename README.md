@@ -221,12 +221,21 @@ Sign  | Usage           |Function
 
 ## Iterable
 
-Any python object which can return it's member one at a time and hence allowing to be looped over is called an iterable. (str, list, dict, tuple, ...).
+Any object that can be iterated (looped) over is called an iterable. `str`,
+`tuple`, `list`, `dict`, `set` are a few examples.
+
+```python
+for item in iterable:
+    ...
+```
 
 ## Slicing
 
-A technique that allows access to a part of an indexable type (str, list, ...).
-Syntax : `iterable[start:end:step]`
+A technique that allows access to a part of an indexable type (`str`, `list`, ...).
+
+```python
+indexable_collection[start:end:step]
+```
 
 ```python
 message = 'Hello, world!'
