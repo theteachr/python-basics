@@ -257,15 +257,14 @@ Conditional statements are way to specify conditions in your code. You might wan
 conditional statements.
 
 ```python
-x = 10
-y = 15
-if (x > y):
+if x > y:
     print("x is greater than y")
-elif (x < y):
+elif x < y:
     print("x is smaller than y")
 else:
     print("x and y are equal")
 ```
+
 `if` is used to specify a condition. Condition can be any statement which returns True/Truthy/False/Falsey value.
 `elif` is also used to specify a condition which will be triggered if the `if` or `elif` statements above it are not triggered.
 `else` is used if none of the specified conditions are met.
