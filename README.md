@@ -251,7 +251,7 @@ natural_numbers[:4] # [1, 2, 3, 4]
 natural_numbers[::-2] # [7, 5, 3, 1]
 ```
 
-## Conditional statements
+## Conditionals
 
 Conditional statements are way to specify conditions in your code. You might want a certain piece of code to execute only when a certain condition is met. It can be done using 
 conditional statements.
